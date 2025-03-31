@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/528c49d0-20da-4414-98df-237534e7bef9)## **📌 Week 1: 윈도우 함수 (Window Functions)**
+**📌 Week 1: 윈도우 함수 (Window Functions)**
 
 ---
 
