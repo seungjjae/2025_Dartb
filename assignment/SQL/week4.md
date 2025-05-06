@@ -88,8 +88,8 @@ ON d.HOUR = HOUR(a.DATETIME)
 GROUP BY d.HOUR
 ```
 재귀문에서 COUNT를 사용해서 한번에 끝내볼려고 했지만 그렇게 했을 시 0,1,2와 같이 COUNT가 0 인 값들은 컬럼에서 사라져 표현되지 않았다.  
-따라서 반복문을 사용해 0~23까지 나타내는 컬럼을 만들고 거기에 기존 TABLE을 JOIN 했어야 했다.
-이때 COUNT(*)를 사용하면 HOUR = 0 의 비이었는 행도 카운트하므로 COUNT(DISTINCT ANIMAL_ID)를 사용해 값이 할당되어있는 행만을 따로 카운트했다.
+따라서 반복문을 사용해 0~23까지 나타내는 컬럼을 만들고 거기에 기존 TABLE을 JOIN 했어야 했다.  
+이때 COUNT(*)를 사용하면 HOUR = 0 의 비이었는 행도 카운트하므로 COUNT(DISTINCT ANIMAL_ID)를 사용해 값이 할당되어있는 행만을 따로 카운트했다.  
 ![image](https://github.com/user-attachments/assets/73ca21f7-6088-4d20-82af-54c1638aad9d)
 
 
